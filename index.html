@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boji – The Legendary Commuter Dog of Istanbul
+Boji isn’t just a dog—he’s a traveler, a free spirit, and a symbol of adventure. From hopping on buses and trains to cruising ferries across Istanbul, Boji won the world’s heart with his charm and independence. He’s more than a pet—he’s a movement. Just like Boji rides every route without limits, BojiCoin is built to journey beyond borders, connecting people everywhere with loyalty, freedom, and unstoppable energy.</title>
+    <!-- Add your CSS framework, e.g., CDN link for Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="dist/output.css" />
+    <link rel="stylesheet" href="index.css" />
+<link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Montserrat:wght@500&family=Poppins&family=Roboto:wght@500&family=Rubik+Bubbles&family=Rubik+Doodle+Shadow&family=Tomorrow:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+
+
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="images/20240403_150616.png">
+<link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+
+<style>
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.97);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+      transform: scale(1);
+    }
+    to {
+      opacity: 0;
+      transform: scale(0.97);
+    }
+  }
+
+  .fade-in {
+    animation: fadeIn 1.2s ease-in-out forwards;
+  }
+
+  .fade-out {
+    animation: fadeOut 0.5s ease-in-out forwards;
+  }
+</style>
+
+
+<style>
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+ .marquee-container {
+  overflow: hidden;
+  position: relative;
+  background: black;
+  border-width: 4px 0; /* ✅ Top and bottom only */
+  border-style: solid;
+  border-color: white;
+  border-radius: 0; /* Optional: set to 1rem if you want rounded top/bottom */
+  padding: 1rem 0;
+}
+  .marquee-track {
+    display: flex;
+    width: fit-content;
+    animation: scroll-left 20s linear infinite;
+    font-family: 'Luckiest Guy', cursive;
+    white-space: nowrap;
+  }
+
+  .marquee-track span {
+    margin: 0 2rem;
+    font-size: 1.5rem;
+    color: white;
+  }
+
+  @media (min-width: 768px) {
+    .marquee-track span {
+      font-size: 2.25rem;
+    }
+  }
+</style>
+
+</head>
+
+<body class="font-Montserrat bg-teal-950">
+
+    <!-- Header Section -->
+    <nav class="nav-main ">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <img src="images/loggo.jpeg" class="h-12 rounded-full md:h-14" alt="etf" />
+                <span class=" md:hidden lg:block text-lg md:text-3xl font-extrabold whitespace-nowrap text-blue-500"
+                    style="background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(255, 255, 255));
+                color: transparent;
+                -webkit-background-clip: text; /* For Safari and older versions of Chrome */
+                background-clip: text;">
+            </a>
+            <button data-collapse-toggle="navbar-default" type="button" style="color: rgb(255, 255, 255);"
+                class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-teal-900 rounded-sm md:hidden hover:bg-cyan-500  "
+                aria-controls="navbar-default" aria-expanded="false" onclick="toggleMenu()">
+                <span class="sr-only">Open menu</span>
+                <span id="menuIcon" class="menu-icon">
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 1h15M1 7h15M1 13h15" />
+                    </svg>
+                </span>
+            </button>
+            <div class="w-full md:block md:w-auto hidden" id="navbar-default">
+                <ul
+                    class="font-medium flex flex-col  p-4 md:p-0 mt-4 border rounded-sm md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0">
+                    <li>
+                        <a href="#"
+                            class="violet block py-2 px-3 text-white text-lg lg:text-xl rounded hover:text-teal-900 md:hover:bg-transparent md:border-0 md:hover:text-teal-900 md:p-0"
+                            aria-current="page"><i class="bx bx-coin"></i> HOME</a>
+                    </li>
+                    <li>
+                        <a href="#about"
+                            class="violet block py-2 px-3 text-white text-lg lg:text-xl rounded hover:text-teal-900 md:hover:bg-transparent md:border-0 md:hover:text-teal-900 md:p-0"
+                            aria-current="page"><i class="bx bx-coin"></i> ABOUT</a>
+                    </li>
+                    
+                    <li>
+                        <a href="#tokenomics"
+                            class="violet block py-2 px-3 text-white text-lg lg:text-xl rounded hover:text-teal-900 md:hover:bg-transparent md:border-0 md:hover:text-teal-900 md:p-0"
+                            aria-current="page"><i class="bx bx-coin"></i> TOKENOMICS</a>
+                    </li>
+                    
+                    <li>
+                        <a href="#memes"
+                            class="violet block py-2 px-3 text-white text-lg lg:text-xl rounded hover:text-teal-900 md:hover:bg-transparent md:border-0 md:hover:text-teal-900 md:p-0  ">
+                            <i class="bx bx-map-alt"></i> MEMES</a>
+                    </li>
+                    <li>
+                        <a href="#HOWTO"
+                            class="violet block py-2 px-3 text-white text-lg lg:text-xl rounded hover:text-teal-900 md:hover:bg-transparent md:border-0 md:hover:text-teal-900 md:p-0  ">
+                            <i class="bx bx-message-dots"></i> HOW TO BUY</a>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div class="my-2 md:block md:w-auto hidden" id="navbar-default-btn">
+                <a href="https://t.me/boji_eth" class="">
+                    <button type="button"
+                        class="text-white bg-black hover:bg-white hover:text-black border border-white focus:outline-none focus:ring-4 focus:ring-white font-medium rounded-full text-sm px-5 py-2.5 me-2 mb-2 ">
+                        Community
+                    </button>
+                </a>
+            </div>
+        </div>
+    </nav>
+<div class="absolute top-1/2 left-2 animate-bounce">🐶</div>
+
+    <!-- Hero Section -->
+    <section
+        class="flex flex-wrap justify-center items-center relative text-white text-center bg-cover bg-center">
+
+      <div class="absolute bottom-6 left-12 animate-spin-slow">🐶</div>
+        <div
+        
+            class="container min-w-fit hero relative z-10 lg:h-screen flex justify-center flex-col-reverse md:flex-row lg:flex-row items-center mx-5 lg:mx-10 ">
+            <div
+                class="main-head text-white w-full m-0 md:m-10 lg:m-0 md:w-1/3 lg:w-1/2 flex flex-col justify-center items-center gap-10">
+
+                <h1 class="text-3xl text-black text-center lg:text-5xl font-extrabold break-words lg:px-4 mt-6 lg:mt-0">BOJI
+                    <br>
+                    <span class="text-center text-base md:text-xl glow-text" style="
+  background-image: linear-gradient(to right, #d6e7e7, #ffffff);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  display: block;
+  font-style: italic;
+  padding: 1rem;
+  letter-spacing: 0.2em;
+">
+  “Legendary Commuter Dog of Istanbul”
+</span>  
+      <div class="absolute top-12 right-12 animate-bounce ">🐶</div>
+      <div class="absolute bottom-4 right-6 animate-bounce">🐶</div>
+                </h1>
+                <a href="Uniswap" class="w-full md:w-1/2 lg:w-1/2">
+                    <button type="button"
+                        class="text-teal-900 flex justify-center gap-x-2 items-center  w-full bg-black hover:bg-white hover:text-black border border-white focus:outline-none focus:ring-4 focus:ring-white font-medium rounded-full text-lg px-5 py-2.5 me-2 mb-2 ">
+                        BUY
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none"
+                            class="svgg">
+                            <path
+                                d="M6.25 5.44702C5.56 5.44702 5 6.00702 5 6.69702V18.197C5 18.887 5.56 19.447 6.25 19.447H17.75C18.44 19.447 19 18.887 19 18.197V14.447C19 14.1818 19.1054 13.9275 19.2929 13.7399C19.4804 13.5524 19.7348 13.447 20 13.447C20.2652 13.447 20.5196 13.5524 20.7071 13.7399C20.8946 13.9275 21 14.1818 21 14.447V18.197C21 19.059 20.6576 19.8856 20.0481 20.4951C19.4386 21.1046 18.612 21.447 17.75 21.447H6.25C5.38805 21.447 4.5614 21.1046 3.9519 20.4951C3.34241 19.8856 3 19.059 3 18.197V6.69702C3 5.83507 3.34241 5.00842 3.9519 4.39892C4.5614 3.78943 5.38805 3.44702 6.25 3.44702H10C10.2652 3.44702 10.5196 3.55238 10.7071 3.73991C10.8946 3.92745 11 4.18181 11 4.44702C11 4.71224 10.8946 4.96659 10.7071 5.15413C10.5196 5.34166 10.2652 5.44702 10 5.44702H6.25ZM14 5.44702C13.7348 5.44702 13.4804 5.34166 13.2929 5.15413C13.1054 4.96659 13 4.71224 13 4.44702C13 4.18181 13.1054 3.92745 13.2929 3.73991C13.4804 3.55238 13.7348 3.44702 14 3.44702H20C20.2652 3.44702 20.5196 3.55238 20.7071 3.73991C20.8946 3.92745 21 4.18181 21 4.44702V10.447C21 10.7122 20.8946 10.9666 20.7071 11.1541C20.5196 11.3417 20.2652 11.447 20 11.447C19.7348 11.447 19.4804 11.3417 19.2929 11.1541C19.1054 10.9666 19 10.7122 19 10.447V6.86102L14.707 11.154C14.5184 11.3362 14.2658 11.437 14.0036 11.4347C13.7414 11.4324 13.4906 11.3272 13.3052 11.1418C13.1198 10.9564 13.0146 10.7056 13.0123 10.4434C13.01 10.1812 13.1108 9.92862 13.293 9.74002L17.586 5.44702H14Z"
+                                fill="#ffffff"></path>
+                        </svg>
+                    </button>
+                </a>
+                <div class="flex justify-center items-center gap-x-3 mx-auto w-full">
+                    <p class="text-white">CA: </p>
+                    <div id="hs-clipboard-basic" class=" text-white border border-blue-500 rounded-lg w-1/2 md:w-1/2">
+                        <input id="hs-clipboard-input" type="text"
+                            class="py-3 px-4 block rounded-lg text-sm w-full md:w-full placeholder:text-white focus:border-blue-500 focus:ring-blue-500 bg-gray-900 border-gray-700"
+                            value="Availiable at launch">
+                    </div>
+                    <button type="button"
+                        class="js-clipboard p-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-blue-500 bg-gray-500 text-white shadow-sm hover:bg-blue-600 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-white dark:hover:bg-gray-800 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+                        data-clipboard-target="#hs-clipboard-basic" data-clipboard-action="copy"
+                        data-clipboard-success-text="Copied" onclick="changeCopyText(this)">
+                        <svg class="js-clipboard-default w-4 h-4 group-hover:rotate-6 transition"
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect width="8" height="4" x="8" y="2" rx="1" ry="1" />
+                            <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
+                        </svg>
+
+                        <svg class="js-clipboard-success hidden w-4 h-4 text-blue-600"
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="20 6 9 17 4 12" />
+                        </svg>
+                        <span class="copy-text">copy</span>
+                    </button>
+                </div>
+                <a href="">
+                    <p class="text-xl lg:text-2xl text-white underline"></p>
+                </a>
+            </div>
+            <div class="main-logo  w-80 md:96 lg:w-1/2 ">
+                <img class="imglogo" src="images/lookingwag.png"
+                alt="Animated etf logo">
+
+                 <div class="absolute top-1/2 left-2 animate-bounce">🐶</div>
+      <div class="absolute bottom-6 left-12 animate-spin-slow">🐶</div>
+      <div class="absolute top-12 right-10 animate-ping">🐶</div>
+      <div class="absolute bottom-4 right-6 animate-bounce">🐶</div>
+            </div>
+        </div>
+
+     
+
+
+    </section>
+<div class="marquee-container my-10">
+  <div class="marquee-track">
+    <!-- DUPLICATED CONTENT -->
+    <span>🐶 $BOJI 🐶</span>
+    <span>🐶 $BOJI 🐶</span>
+    <span>🐶 $BOJI 🐶</span>
+    <span>🐶 $BOJI 🐶</span>
+    <span>🐶 $BOJI 🐶</span>
+    <span>🐶 $BOJI 🐶</span>
+    <span>🐶 $BOJI 🐶</span>
+    <span>🐶 $BOJI 🐶</span>
+    <!-- Duplicate again -->
+    <span>🐶 $BOJI 🐶</span>
+    <span>🐶 $BOJI 🐶</span>
+    <span>🐶 $BOJI 🐶</span>
+    <span>🐶 $BOJI 🐶</span>
+    <span>🐶 $BOJI 🐶</span>
+    <span>🐶 $BOJI 🐶</span>
+    <span>🐶 $BOJI 🐶</span>
+    <span>🐶 $BOJI 🐶</span>
+  </div>
+</div>
+
+
+<section id="about" class="py-16 px-6 md:px-20 bg-gradient-to-r from-yellow-400 to-orange-500 text-left">
+  <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+    <!-- Left Text Content -->
+    <div >
+      <h2 class="text-4xl md:text-5xl font-bold font-fun text-black drop-shadow-[2px_2px_white] mb-10">
+        <span class="italic font-black">MEET BOJI!</span>
+      </h2>
+
+      <!-- Feature Boxes -->
+      <div class="space-y-6">
+        <div class="bg-white px-6 py-4 rounded-2xl border-4 border-black shadow-xl skew-x-[-2deg]">
+          <div class="flex items-center gap-4">
+            <span class="text-3xl">🐶</span>
+            <div>
+              <h3 class="font-bold font-fun text-black text-lg">BOJI</h3>
+              <p class="text-black text-sm">Boji isn’t just a dog he’s a traveler, a free spirit, and a symbol of adventure, From hopping on buses and trains to cruising ferries across Istanbul, Boji won the world’s heart with his charm and independence, He’s more than a pet he’s a movement. </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white px-6 py-4 rounded-2xl border-4 border-black shadow-xl skew-x-[-2deg]">
+          <div class="flex items-center gap-4">
+            <span class="text-3xl">🐶</span>
+            <div>
+              <h3 class="font-bold font-fun text-black text-lg">BOJI</h3>
+              <p class="text-black text-sm">Just like Boji rides every route without limits, BojiCoin is built to journey beyond borders, connecting people everywhere with loyalty, freedom, and unstoppable energy, $BOJI isn’t just a token, it’s freedom, loyalty, and unstoppable energy packed into one coin, More than a meme.</p>
+            </div>
+          </div>
+        </div>
+
+        
+      </div>
+    </div>
+
+    <!-- Right Mascot Image -->
+    <div class="relative">
+      <img src="images/4frogs.png" alt="BaoBao" class="w-[300px] mx-auto">
+
+      <!-- Speech Bubble -->
+     
+
+      <!-- Floating Icons -->
+      <div class="absolute top-1/2 left-2 animate-bounce">🐶</div>
+      <div class="absolute bottom-6 left-12 animate-spin-slow">🐶</div>
+      <div class="absolute top-12 right-10 animate-ping">🐶</div>
+      <div class="absolute bottom-4 right-6 animate-bounce">🐶</div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- 2about section -->
+
+
+    <!-- Tokenomics Section -->
+    <section id="tokenomics" class=" text-white py-16">
+        <div class="container mx-auto text-center">
+            <div class="token1 flex flex-col-reverse md:flex-row md:items-center justify-start mx-4 md:mx-6 lg:mx-8">
+                <h1 class="token text-5xl lg:text-7xl font-extrabold mb-8 text-white ">TOKENOMICS</h1>
+                <img class="w-32 md:w-42 lg:w-64 px-5" src="images/tok.svg" alt="">
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-8 m-10 align-middle ">
+                <!-- Total Supply -->
+                <div class="token1 p-6 border-4 border-white rounded-lg shadow-2xl">
+                    <h1 class="text-3xl font-bold mb-4 text-white">Total Supply</h1>
+                    <p class="tok pt-5">1 Billion </p>
+                </div>
+                <!-- Initial Liquidity -->
+                <div class="token2 p-6 border-4 border-white rounded-lg shadow-md">
+                    <h1 class="text-3xl font-bold mb-4 text-white">Buy/Sell</h1>
+                    <p class="tok   pt-5">0% Tax</p>
+                </div>
+                <div class="token2 p-6 border-4 border-white rounded-lg shadow-md">
+                    <h1 class="text-3xl font-bold mb-4 text-white">Liquidity</h1>
+                    <p class="tok   pt-5">100% burnt</p>
+                </div>
+                <!-- addd -->
+                <div class="token3 p-6 border-4 border-white rounded-lg shadow-md">
+                    <h1 class="text-3xl font-bold mb-4 text-white">CA</h1>
+
+                    <div class="flex justify-center items-center w-full gap-x-3">
+
+                        <div id="hs-clipboard-basic" class=" text-white border  rounded-lg w-full ">
+                            <input id="hs-clipboard-input" type="text"
+                                class="py-3 px-4 block rounded-lg text-sm w-full md:w-full placeholder:text-white  bg-black"
+                                value="Availiable at launch">
+                        </div>
+                        <button type="button"
+                            class="js-clipboard p-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border text-white shadow-sm disabled:opacity-50 disabled:pointer-events-none "
+                            data-clipboard-target="#hs-clipboard-basic" data-clipboard-action="copy"
+                            data-clipboard-success-text="Copied" onclick="changeCopyText(this)">
+                            <svg class="js-clipboard-default w-4 h-4 group-hover:rotate-6 transition"
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <rect width="8" height="4" x="8" y="2" rx="1" ry="1" />
+                                <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
+                            </svg>
+
+                            <svg class="js-clipboard-success hidden w-4 h-4 text-blue-600"
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="memes" class="py-12 px-4 text-center bg-gradient-to-r from-yellow-400 to-orange-500">
+  <h2 class="text-4xl md:text-5xl font-bold font-fun text-white mb-10 drop-shadow-[2px_2px_black]">
+    🐶 BOJI Memories
+  </h2>
+
+  <!-- Meme Card -->
+  <div class="max-w-sm mx-auto bg-white rounded-xl shadow-[0_8px_20px_rgba(0,0,0,0.4)] border-[6px] border-black p-3 relative">
+    <img id="memeImage" src="https://i.imgflip.com/7u9pbo.jpg" alt="Meme" class="rounded-md fade-in">
+    <div class="text-center font-fun text-lg mt-2 text-black">#BOJIMeme</div>
+  </div>
+
+  <!-- Prev/Next -->
+  <div class="mt-6 flex justify-center gap-4">
+    <button onclick="prevMeme()" class="bg-black text-white px-6 py-2 rounded-full shadow-lg hover:bg-gray-800 font-bold">
+      ⬅️ PREV
+    </button>
+    <button onclick="nextMeme()" class="bg-black text-white px-6 py-2 rounded-full shadow-lg hover:bg-gray-800 font-bold">
+      NEXT ➡️
+    </button>
+  </div>
+   </section>
+  <!-- partners section -->
+
+<section id="HOWTO" class="py-16 px-6 bg-yellow-300 text-black text-center">
+  <h2 class="text-4xl md:text-5xl font-fun font-bold drop-shadow-md mb-12">HOW TO BUY</h2>
+
+  <div class="grid md:grid-cols-4 gap-6 max-w-7xl mx-auto">
+    <!-- Step 1: Wallet -->
+    <div class="bg-white border-4 border-black rounded-2xl p-6 shadow-xl">
+      <div class="w-12 h-12 rounded-full bg-yellow-300 border-2 border-black flex items-center justify-center mx-auto text-xl font-bold mb-4">1</div>
+      <p class="text-xs font-bold font-fun uppercase">WALLET</p>
+      <h3 class="text-lg font-bold font-fun mb-2">GET A WALLET</h3>
+      <p class="text-sm mb-4">Download an EVM-compatible wallet to store your BOJI tokens safely!</p>
+      <div class="space-y-2">
+        <a href="https://trustwallet.com/" target="_blank" class="block bg-black text-white px-4 py-2 rounded-full text-sm hover:bg-gray-900">Trust Wallet</a>
+        <a href="https://metamask.io/" target="_blank" class="block bg-black text-white px-4 py-2 rounded-full text-sm hover:bg-gray-900">MetaMask</a>
+      </div>
+    </div>
+
+    <!-- Step 2: Buy SOL -->
+    <div class="bg-white border-4 border-black rounded-2xl p-6 shadow-xl">
+      <div class="w-12 h-12 rounded-full bg-yellow-300 border-2 border-black flex items-center justify-center mx-auto text-xl font-bold mb-4">2</div>
+      <p class="text-xs font-bold font-fun uppercase">ETH</p>
+      <h3 class="text-lg font-bold font-fun mb-2">BUY Ethereum</h3>
+      <p class="text-sm mb-4">Purchase ETH tokens to swap for BOJI. You can buy directly or from exchanges!</p>
+      <div class="space-y-2">
+        <a href="https://www.coinbase.com/" target="_blank" class="block bg-black text-white px-4 py-2 rounded-full text-sm hover:bg-gray-900">🏦 Coinbase</a>
+        <a href="https://www.binance.com/" target="_blank" class="block bg-black text-white px-4 py-2 rounded-full text-sm hover:bg-gray-900">⚡ Binance</a>
+      </div>
+    </div>
+
+    <!-- Step 3: DEX -->
+    <div class="bg-white border-4 border-black rounded-2xl p-6 shadow-xl">
+      <div class="w-12 h-12 rounded-full bg-yellow-300 border-2 border-black flex items-center justify-center mx-auto text-xl font-bold mb-4">3</div>
+      <p class="text-xs font-bold font-fun uppercase">DEX</p>
+      <h3 class="text-lg font-bold font-fun mb-2">GO TO UNISWAP</h3>
+      <p class="text-sm mb-4">Visit UNISWAP Exchange - the best DEX on Ethereum for optimal rates!</p>
+      <div class="space-y-2">
+        <a href="UNISWAP" target="_blank" class="block bg-black text-white px-4 py-2 rounded-full text-sm hover:bg-gray-900">🚀 Open UNISWAP</a>
+        <a href="Pancakeswap" target="_blank" class="block bg-black text-white px-4 py-2 rounded-full text-sm hover:bg-gray-900">⚡ Pancakeswap</a>
+      </div>
+    </div>
+
+    <!-- Step 4: Swap -->
+    <div class="bg-white border-4 border-black rounded-2xl p-6 shadow-xl">
+      <div class="w-12 h-12 rounded-full bg-yellow-300 border-2 border-black flex items-center justify-center mx-auto text-xl font-bold mb-4">4</div>
+      <p class="text-xs font-bold font-fun uppercase">SWAP</p>
+      <h3 class="text-lg font-bold font-fun mb-2">SWAP FOR BOJI</h3>
+      <p class="text-sm mb-4">Connect your wallet, paste our contract address, and swap ETH for BOJI!</p>
+      <div class="space-y-2">
+        <a href="UNISWAP" target="_blank" class="block bg-black text-white px-4 py-2 rounded-full text-sm hover:bg-gray-900">💎 BUY BOJI</a>
+        <button onclick="copyContract()" class="w-full bg-black text-white px-4 py-2 rounded-full text-sm hover:bg-gray-900">📋 Copy Contract</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+  
+
+    <!-- partners section -->
+
+    <!-- social section -->
+    <section id="social">
+        <div class="flex flex-col-reverse items-center md:flex-row justify-between gap-5 ">
+            <div class="social w-full md:w-1/2 mx-4 px-4 flex justify-center items-center">
+                <img class="w-96 md:w-[600px] lg:w-[800px] xl:w-[1000px] max-w-full mx-8" src="images/logo1.png" alt="">
+            </div>
+
+            <div class="social w-full md:w-1/2 mx-4 px-4">
+                <p class="text-base md:text-lg lg:text-xl font-semibold mb-8 text-white leading-relaxed">
+                 $BOJI The Legendary Meme Dog isn’t just a token it’s freedom, loyalty, and unstoppable energy.
+                </p>
+            
+                <h1 class="text-center md:text-left text-lg md:text-xl lg:text-2xl font-bold mb-8 text-white">
+                    Follow BOJI
+                </h1>
+            
+                <div class="flex items-center justify-center md:justify-start gap-4">
+                    <!-- <a href="TGLINK">
+                        <img class="w-16 md:w-20 lg:w-24 transform hover:scale-110 transition duration-200" src="images/2111646.png" alt="">
+                    </a> -->
+                    <a href="https://x.com">
+                        <img class="w-16 md:w-20 lg:w-24 transform hover:scale-110 transition duration-200" src="images/pngimg.com - twitter_PNG20.png" alt="">
+                    </a>
+                    <!-- <a href="">
+                        <img class="w-16 md:w-20 lg:w-24 transform hover:scale-110 transition duration-200" src="images/social_discord.png" alt="">
+                    </a> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-4 text-center mt-10">
+        <div class="container mx-auto">
+            <!-- Disclaimer, social media icons, copyright here -->
+            <p class="text-sm text-white">Copyright  BOJI © 2025. All rights reserved</p>
+        </div>
+    </footer>
+    
+
+</body>
+
+<script>
+
+    ScrollReveal().reveal(".social", { delay: 100, reset: true, origin: 'right', distance: '20px', duration: 300 });
+
+    ScrollReveal().reveal(".token3", { delay: 100, reset: true, origin: 'right', distance: '500px', duration: 500 });
+    ScrollReveal().reveal(".token2", { delay: 100, reset: true, origin: 'right', distance: '500px', duration: 500 });
+    ScrollReveal().reveal(".token1", { delay: 100, reset: true, origin: 'right', distance: '500px', duration: 500 });
+
+    ScrollReveal().reveal(".chart", { delay: 100, reset: true, origin: 'bottom', distance: '500px', duration: 300 });
+    ScrollReveal().reveal(".main-head", { delay: 100, reset: true, origin: 'left', distance: '500px', duration: 300 });
+    ScrollReveal().reveal(".main-logo", { delay: 100, reset: true, origin: 'right', distance: '500px', duration: 300 });
+    ScrollReveal().reveal(".nav-main", { delay: 100, reset: true, origin: 'top', distance: '20px', duration: 300 });
+
+    // button menu nav
+    function toggleMenu() {
+        var icon = document.getElementById("menuIcon");
+        var navbar = document.getElementById("navbar-default");
+
+        if (navbar.style.display === 'none' || navbar.style.display === '') {
+            icon.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: cyan;"><path d="M4 6h16v2H4zm4 5h12v2H8zm5 5h7v2h-7z"></path></svg>';
+            navbar.style.display = 'block';
+        } else {
+            icon.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: cyan;"><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path></svg>';
+            navbar.style.display = 'none';
+        }
+    }
+
+    function changeCopyText(button) {
+        var copyTextElement = button.querySelector('.copy-text');
+        if (copyTextElement) {
+            copyTextElement.textContent = 'copied';
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+        var clipboard = new ClipboardJS('.js-clipboard');
+    });
+
+
+    const menuIcon = document.querySelector('#menu-icon');
+    const navbar = document.querySelector('.navbar');
+    const navbg = document.querySelector('.nav-bg');
+    menuIcon.addEventListener('click', () => {
+        menuIcon.classList.toggle('bx-x');
+        navbar.classList.toggle('active');
+        navbg.classList.toggle('active');
+    });
+</script>
+<script>
+  const memes = [
+    "https://i.ibb.co/yBRBChJD/boji04.jpg",
+    "https://i.ibb.co/LDsrGMYt/boji01.jpg",
+    "https://i.ibb.co/JWtnMtb9/boji02.jpg",
+    "https://i.ibb.co/dwYzpR4Q/boji05.jpg",
+    "https://i.ibb.co/N2XBKN6D/boji03.jpg"
+  ];
+
+  let currentMeme = 0;
+  const memeImage = document.getElementById("memeImage");
+
+  function updateMeme() {
+    memeImage.classList.remove("fade-in");
+    memeImage.classList.add("fade-out");
+
+    setTimeout(() => {
+      memeImage.src = memes[currentMeme];
+      memeImage.classList.remove("fade-out");
+      memeImage.classList.add("fade-in");
+    }, 500); // matches fade-out duration
+  }
+
+  function nextMeme() {
+    currentMeme = (currentMeme + 1) % memes.length;
+    updateMeme();
+  }
+
+  function prevMeme() {
+    currentMeme = (currentMeme - 1 + memes.length) % memes.length;
+    updateMeme();
+  }
+
+  // Auto-slide every 5.5 seconds
+  setInterval(nextMeme, 7000);
+</script>
+<script>
+  function copyContract() {
+    const contractAddress = "Availiable at launch"; // Replace with actual address
+    navigator.clipboard.writeText(contractAddress)
+      .then(() => {
+        alert("Contract copied to clipboard!");
+      })
+      .catch(() => {
+        alert("Failed to copy contract. Please try manually.");
+      });
+  }
+</script>
+
+
+
+</html>
