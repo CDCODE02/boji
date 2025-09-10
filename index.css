@@ -5,7 +5,7 @@
 html,
 body {
   overflow-x: hidden;
-  font-family: "Archivo Black";
+  font-family: "Mona Sans", sans-serif;
   background: linear-gradient(
     to right,
     #ff6b35,
@@ -13,7 +13,9 @@ body {
     #ff6b35
   ); /* Matches Bumper */
 }
-
+.font-mochiy {
+  font-family: "Mochiy Pop P One", sans-serif;
+}
 @keyframes customBounce {
   30% {
     transform: scale(1.2);
@@ -65,7 +67,7 @@ body {
 }
 
 .font-fun {
-  font-family: "Luckiest Guy", cursive;
+  font-family: "Mochiy Pop P One";
 }
 .animate-marquee-ducky {
   display: inline-block;
@@ -83,7 +85,7 @@ body {
   animation: scroll-right-to-left 20s linear infinite;
 }
 .font-fun {
-  font-family: "Luckiest Guy", cursive;
+  font-family: "Mochiy Pop P One";
 }
 
 .about-logos {
